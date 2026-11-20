@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA 6 Trophy Guide &amp; Tracker — All 55 PS5 Trophies</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI trophies on PlayStation 5: cited guides, a roadmap to the platinum, missable flags, and saved progress.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:,">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+    <h1>GTA 6 Trophy Guide &amp; Tracker</h1>
+    <p class="subtitle">Every trophy, its official name, description and grade, a guide in our own words with its sources, a roadmap to the platinum, and a checklist that saves your progress in this browser. Works offline — no network, no account.</p>
+    <div class="progress-wrap" aria-label="Progress">
+      <div class="progress-numbers"><span id="progressText">0 of 55 earned</span><span id="progressByGrade"></span></div>
+      <div class="progress-bar"><div id="progressFill" class="progress-fill" style="width:0%"></div></div>
+    </div>
+  </div>
+</header>
+<nav class="tabs" aria-label="Views">
+  <a href="#/" id="tabChecklist" class="tab">Checklist</a>
+  <a href="#/roadmap" id="tabRoadmap" class="tab">Roadmap to Platinum</a>
+  <a href="#/missables" id="tabMissables" class="tab">Missables <span id="missableCount" class="pill">1</span></a>
+</nav>
+<section class="controls" aria-label="Filters and progress tools">
+  <label class="control">Search <input id="search" type="search" placeholder="Trophy name or guide text…" autocomplete="off"></label>
+  <label class="control">Grade
+    <select id="gradeFilter">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label class="control">Kind
+    <select id="kindFilter">
+      <option value="all">All kinds</option>
+      <option value="story">Story</option>
+      <option value="side">Strangers &amp; side</option>
+      <option value="collectibles">Collectibles</option>
+      <option value="activities">Activities</option>
+      <option value="misc">Miscellaneous</option>
+    </select>
+  </label>
+  <label class="control">Show
+    <select id="earnedFilter">
+      <option value="all">All trophies</option>
+      <option value="earned">Earned only</option>
+      <option value="unearned">Not yet earned</option>
+    </select>
+  </label>
+  <label class="check"><input id="missableOnly" type="checkbox"> Missable only</label>
+  <label class="check"><input id="spoilerToggle" type="checkbox" checked> Hide spoilers (hidden trophies stay hidden until earned)</label>
+  <span class="spacer"></span>
+  <button id="exportBtn" type="button">Export progress</button>
+  <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+  <button id="resetBtn" type="button">Reset</button>
+</section>
+<main id="view"></main>
+<section id="detail" class="detail" hidden></section>
+<footer>
+  <p>Names, descriptions and grades are the official PlayStation list as published by the trophy trackers that agree on it (PowerPyx, PSNProfiles, Exophase). Guides are written in our own words for this guide and cite their sources beside each trophy; where a step could not yet be verified in a published guide, the guide says so. No Rockstar artwork is used. 55 trophies: 1 platinum, 2 gold, 6 silver, 46 bronze; 28 hidden; no online trophies. Platinum estimate: about 200 hours, difficulty 4/10, one playthrough (PowerPyx).</p>
+  <p>Progress is stored only in your browser (localStorage) and never leaves it. Export downloads a JSON file; import reads that file back.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
